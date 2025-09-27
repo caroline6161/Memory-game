@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeu de Mémoire</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="welcome-screen">
+    <h1>Jeu de Mémoire</h1>
+    <label for="theme-selector">Thème :</label>
+    <select id="theme-selector">
+      <option value="animaux">Animaux</option>
+      <option value="fruits">Fruits</option>
+    </select>
+
+    <label for="mode-selector">Mode :</label>
+    <select id="mode-selector">
+      <option value="solo">Solo</option>
+      <option value="2joueurs">2 Joueurs</option>
+      <option value="vsordi">VS Ordinateur</option>
+      <option value="memoire">Mode Mémoire</option>
+    </select>
+
+    <label for="pair-count">Nombre de paires :</label>
+    <select id="pair-count">
+      <option value="8" selected>8</option>
+      <option value="12">12</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+    </select>
+
+    <button id="start-button">Commencer</button>
+  </header>
+
+  <main id="game-container">
+    <div id="player-turn"></div>
+    <div id="countdown"></div>
+    <div id="game-board"></div>
+
+    <div id="controls">
+      <button id="replay-button">Rejouer</button>
+      <button id="fast-mode">Mode Rapide</button>
+      <button id="zoom-toggle">Zoom</button>
+      <button id="mute-button">Son ON/OFF</button>
+      <button id="show-scores">Scores</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
